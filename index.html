@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Portifolio Julia</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="setTimeout(typeWriter, 2000);">
+    <div class="main">
+        <div class="container geral-info animated slideInDown">
+            <div class="row">
+                <div class="col-6">
+                    <p id="demo"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var i = 0;
+    var txt = 'Olá meu nome é Júlia, tenho 20 anos e sou estudante de Tecnologia da Informação';
+    var speed = 50;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
