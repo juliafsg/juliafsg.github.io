@@ -9,33 +9,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="setTimeout(typeWriter, 2000);">
+<body>
     <div class="main">
-        <div class="container geral-info animated slideInDown">
-            <div class="row">
-                <div class="col-6">
-                    <p id="demo"></p>
+        <div class="container h-100 w-50">
+            <div class="row pt-5 h-100">
+                <div class="col-12 p-0 text-center animated tada">
+                    <div id="intro" class="geral-info p-3 animated">
+
+                        <img class="image align-self-center m-3" src="images/perfil_1.png " alt="Foto Júlia Ferreira de Souza Glória ">
+                        <p> Meu nome é <b>Júlia Ferreira</b> , tenho 20 anos e sou estudante de Bacharelado em <b>Tecnologia da Informação</b> pela Universidade Federal do Rio Grande do Norte(UFRN). Atualmente estou no <b>7º período</b> e cursando disciplinas
+                            para obter o minor em <b>Bioinformática </b> pelo Programa de Estudos Secundários do Instituto Metrópole Digital (PES/IMD). Além disso, pretendo fazer o Segundo Ciclo em <b>Engenharia de Software</b> também na UFRN.</p>
+
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#" onclick="getOut()">Sobre Mim<span class="sr-only">(Página atual)</span></a>
+                                <a class="nav-item nav-link" href="#" onclick="getOut();">Experiências Profissionais</a>
+                                <a class="nav-item nav-link" href="#" onclick="getOut();">Minhas Habilidades</a>
+                                <a class="nav-item nav-link" href="#" onclick="getOut();">Meus Projetos no Git</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
 
             </div>
         </div>
     </div>
 </body>
-
 <script>
-    var i = 0;
-    var txt = 'Olá meu nome é Júlia, tenho 20 anos e sou estudante de Tecnologia da Informação';
-    var speed = 50;
-
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("demo").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
-        }
+    function getOut() {
+        document.getElementById("intro").classList.toggle("hinge");
     }
 </script>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
+<script src="js/jquery-3.2.1.min.js "></script>
+<script type="text/javascript " src="main.js "></script>
 
 </html>

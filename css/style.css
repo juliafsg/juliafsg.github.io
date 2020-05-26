@@ -3,10 +3,15 @@ html {
     height: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 p {
-    font-weight: 200;
-    font-size: 50px;
-    color: black;
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .main {
@@ -18,7 +23,16 @@ p {
 }
 
 .geral-info {
-    height: 100%;
     background-color: rgba(241, 241, 241, 0.801);
-    padding: 50px;
+}
+
+.main:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .3;
 }
