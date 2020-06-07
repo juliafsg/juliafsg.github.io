@@ -36,3 +36,42 @@ a {
     background: #000;
     opacity: .3;
 }
+
+.list-group-item,
+.list-group-item.active {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.list-group-item:hover {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.list-group-item-action {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+    p {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    a {
+        font-size: 35px;
+    }
+    #img_perfil {
+        height: 300px;
+    }
+}
