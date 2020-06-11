@@ -5,7 +5,7 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 p {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     color: rgb(0, 0, 0);
 }
@@ -71,7 +71,7 @@ a {
     a {
         font-size: 35px;
     }
-    #img_perfil {
-        height: 300px;
+    img {
+        width: 100%;
     }
 }
