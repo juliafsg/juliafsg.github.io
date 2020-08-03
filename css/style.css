@@ -1,77 +1,94 @@
-body,
-html {
-    height: 100%;
+body, html {
+  height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 p {
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
-    color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(0, 0, 0);
 }
 
 a {
-    font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .main {
-    height: 100%;
-    background-image: url('../images/bg_main.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  background-image: url('../images/bg_main.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .geral-info {
-    background-color: rgba(241, 241, 241, 0.801);
+  background-color: rgba(241, 241, 241, 0.801);
 }
 
 .main:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    opacity: .3;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .3;
 }
 
-.list-group-item,
-.list-group-item.active {
-    background-color: #343a40;
-    border-color: #343a40;
+.list-group-item, .list-group-item.active {
+  background-color: #343a40;
+  border-color: #343a40;
 }
 
 .list-group-item:hover {
-    background-color: #343a40;
-    border-color: #343a40;
-    color: rgba(255, 255, 255, 0.8);
+  background-color: #343a40;
+  border-color: #343a40;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .list-group-item:first-child {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .list-group-item:last-child {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .list-group-item-action {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-@media (max-width: 992px) {
-    p {
-        font-size: 35px;
-        margin-top: 20px;
-    }
-    a {
-        font-size: 35px;
-    }
-    img {
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+  }
+  a {
+    font-size: 14px;
+    padding: 5px !important;
+  }
+  img {
+    width: 80%;
+  }
+  .list-group-item {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 11px;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+  }
+  a {
+    font-size: 11px;
+    padding: 5px !important;
+  }
 }
