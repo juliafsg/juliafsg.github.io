@@ -1,16 +1,32 @@
-body, html {
+body,
+html {
   height: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-p {
-  font-size: 20px;
-  font-family: 'Roboto Mono', monospace;
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+p, ul{
+  font-family: 'Work Sans';
   color: rgb(0, 0, 0);
 }
 
 a {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Work Sans';
+}
+
+ul {
+  text-align: initial;
+}
+
+#profile_img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 .main {
@@ -26,17 +42,18 @@ a {
 }
 
 .main:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: .3;
+  opacity: 0.3;
 }
 
-.list-group-item, .list-group-item.active {
+.list-group-item,
+.list-group-item.active {
   background-color: #343a40;
   border-color: #343a40;
 }
@@ -62,7 +79,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  p {
+  p, ul>li {
     font-size: 14px;
     margin: 0px;
     padding: 10px;
@@ -81,7 +98,7 @@ a {
 }
 
 @media screen and (max-width: 320px) {
-  p {
+  p, ul>li {
     font-size: 11px;
     margin: 0px;
     padding: 10px;

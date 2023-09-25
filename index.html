@@ -1,217 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <title>Portifolio Julia</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <div class="main">
-    <div class="container h-100">
-      <div class="row h-100 justify-content-center d-flex align-items-center">
-        <div class="col-9 p-0 text-center animated zoomIn">
-
-          <div class="tab-content" id="nav-tabContent">
-            <!-- Introdução -->
-            <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
-              <div class="geral-info p-md-4 ">
-
-
-                <img id="img_perfil" class="image align-self-center m-3 animated-delay fadeInUp"
-                  src="images/perfil_1.png " alt="Foto Júlia Ferreira de Souza Glória ">
-                <p class="animated-delay2 fadeInUp"> Meu nome é <b>Júlia Ferreira</b>, tenho 20 anos e sou estudante de
-                  Bacharelado em <b>Tecnologia da Informação</b> pela Universidade Federal do Rio Grande do Norte(UFRN).
-                  Atualmente estou no <b>7º período</b> e cursando
-                  disciplinas para obter o minor em <b>Bioinformática </b> pelo Programa de Estudos Secundários do
-                  Instituto Metrópole Digital (PES/IMD). Além disso, pretendo fazer o Segundo Ciclo em <b>Engenharia de
-                    Software</b> também
-                  na UFRN.</p>
-
-              </div>
-            </div>
-            <!-- Experiências Profissionais -->
-            <div class="tab-pane fade" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
-
-              <div class="bd-example">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
-                    </li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active geral-info p-5">
-                      <img src="images/tcern.png" class="d-inline animated-delay fadeInUp" alt="Proeidi" width="50%">
-                      <p class="animated-delay2 fadeInUp"><b>Estagária de Desenvolvimento (2019 -
-                          Atual):</b> Atuo como desenvolvedora full-stack nas aplicações do Tribunal de Contas do Estado
-                        (TCE) e trabalho principalmente com C# no back-end e com Angular no front-end. Além disso,
-                        colaboro também
-                        como líder de projetos, fazendo levantamento de requisitos e análise de projeto orientado a
-                        objetos.</p>
-                    </div>
-
-                    <div class="carousel-item  geral-info p-5">
-                      <img src="images/proeidi.png" class="d-inline animated-delay fadeInUp" alt="Proeidi" width="40%">
-                      <p class="mt-3 animated-delay2 fadeInUp"><b>Bolsista de Projeto de Extensão
-                          (2017 - 2019):</b> Participei como professora e monitora, auxiliando na preparação das aulas,
-                        assim como na produção de apostilas e materiais de estudo. Também atuei na análise de projeto do
-                        ProeidiWEB
-                        (ainda em andamento), além da documentação, visão de produto e diagramas de fluxo, contribuí
-                        para a implementação incial do back-end (Java).</p>
-                    </div>
-
-                    <div class="carousel-item geral-info p-5">
-                      <img class="d-inline animated-delay fadeInUp" src="images/giife.png" alt="Giife" width=40%>
-                      <img class="d-inline animated-delay fadeInUp" src="images/cict.png" alt="Cict" width=57%>
-                      <p class="mt-2 animated-delay2 fadeInUp"><b>Bolsista de Projeto de Pesquisa
-                          (2018 - 2019):</b> Participei do Projeto: Mapeamento de Práticas de Leitura dos Alunos do BTI,
-                        no qual me vinculei ao Grupo de Interdisciplinar de Estudos e Pesquisas em Informática na
-                        Educação (GIIfE)
-                        e subemeti um artigo ao Congresso de Iniciação Científica e Tecnológica(CICT).</p>
-
-                    </div>
-
-                    <div class="carousel-item geral-info p-5">
-                      <img src="images/eipi.png" class="d-inline animated-delay fadeInUp" alt="Proeidi" width="50%">
-                      <p class="mt-3 animated-delay2 fadeInUp"><b>Bolsista de Projeto de Monitoria
-                          (2018):</b> atuei como monitora das disciplinas de Práticas de Leitura e Escrita, e as
-                        experiencias e resultados obtidos ao longo desse projeto foram apresentados no Encontro
-                        Integrado dos Programas
-                        de Ensino da UFRN (EIPI) </p>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+  <head>
+    <title>Portifolio Julia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center d-flex align-items-center">
+          <div class="col-9 p-0 text-center animated zoomIn">
+            <div class="tab-content" id="nav-tabContent">
+              <!-- Introdução -->
+              <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-intro-list">
+                <div class="geral-info p-3 ">
+                  <img id="profile_img" class="image align-self-center m-3"
+                    src="images/profile.jpeg " alt="Foto Júlia Ferreira de Souza Glória ">
+                  <p>With four years of programming experience, I'm eager to create scalable solutions with a focus on continuous delivery, quality assurance, monitoring, and accessibility. Recently enrolling at Cornerstone College to strengthen my web development skills, I'm now actively seeking <b>co-op</b> or <b>part-time</b> opportunities in Canada.</p>
                 </div>
               </div>
-            </div>
-
-            <!-- Habilidades e Conhecimentos -->
-            <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
-
-              <div class="bd-example">
-                <div id="carousel2ExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel2ExampleCaptions" data-slide-to="0" class="active">
-                    </li>
-                    <li data-target="#carousel2ExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carousel2ExampleCaptions" data-slide-to="2"></li>
-                    <li data-target="#carousel2ExampleCaptions" data-slide-to="3"></li>
-
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active geral-info p-5">
-                      <p class="mt-2 animated-delay fadeInUp"><b> Bioinformática</b></p>
-                    <div class="row justify-content-center d-flex align-items-center p-3">
-                        <div class="col col-md-3">
-                            <img src="images/R_1.png" class="d-inline animated-delay fadeInUp" width="80%" alt="R">
-                          </div>
-                      <div class="col col-md-4">
-                          <img src="images/chimera.png" class="d-inline animated-delay fadeInUp" width="100%" alt="Chimera">
-                        </div>
-                        <div class="col col-md-4">
-                            <img src="images/psipred.jpg" class="d-inline animated-delay fadeInUp" width="100%" alt="Chimera">
-                        </div>  
-                    </div>
-                    <div class="row justify-content-center d-flex align-items-center p-3">
-                        <!-- <div class="col col-md-3">
-                            <img src="images/dplyr.png" class="d-inline animated-delay fadeInUp" width="60%" alt="R">
-                          </div> -->
-                        <div class="col col-md-3">
-                          <img src="images/tidyr.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Chimera">
-                        </div>
-                        <div class="col col-md-3">
-                          <img src="images/lubridate.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Rstudio">
-                        </div>
-                        <div class="col col-md-3">
-                            <img src="images/ggplot2.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Rstudio">
-                          </div>
+              <!-- Experiências Profissionais -->
+              <div class="tab-pane" id="list-experiencia" role="tabpanel" aria-labelledby="list-experiencia-list">
+                <div class="bd-example">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+                      </li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active geral-info p-3">
+                        <img src="images/sanar.png" class="d-inline" alt="Sanar Logo" width="50%">
+                        <p>
+                          <b> Software Engineer </b>    
+                          <br/>
+                          <span>(Mar 2021 - Present)</span>                 
+                        <ul>
+                          <li>Collaborated with team to evolve services</li>
+                          <li>Developed web components based on prototypes</li>
+                          <li>Implemented A/B tests and monitored results</li>
+                          <li>Wrote automated unit, integration and e2e tests</li>
+                          <li>Proposed code optimizations</li>
+                        </ul>
+                        </p>
+                      </div>
+                      <div class="carousel-item geral-info p-3">
+                        <img src="images/indra.png" class="d-inline" alt="Indra Logo" width="50%">
+                        <p class="mt-3">
+                          <b>Junior Software Engineer </b> 
+                          <br/>
+                          <span>(Sep 2020 - Mar 2021)</span>
+                        <ul>
+                          <li>Analyzed client software and refactored code</li>
+                          <li>Paired with team members to implement features</li>
+                          <li>Executed manual tests to guarantee quality</li>
+                        </ul>
+                        </p>
+                      </div>
+                      <div class="carousel-item geral-info p-3">
+                        <img src="images/tcern.png" class="d-inline" alt="TCE Logo" width="100%">
+                        <p class="mt-3">
+                          <b>Software Engineer Intern</b> 
+                          <br/>
+                          <span>(Sep 2019 - Sep 2020)</span>
+                        <ul>
+                          <li>Identified functionality issues in existing project</li>
+                          <li>Implemented corrections</li>
+                          <li>Wrote technical documentation</li>
+                        </ul>
+                        </p>
                       </div>
                     </div>
-
-                    <div class="carousel-item  geral-info p-5">
-                      <p class="mt-2 animated-delay fadeInUp"><b>Back-end</b></p>
-                    </div>
-
-                    <div class="carousel-item geral-info p-5">
-                      <p class="mt-2 animated-delay fadeInUp"><b>Front-end</b></p>
-                    </div>
-
-                    <div class="carousel-item geral-info p-5">
-                      <p class="mt-2 animated-delay fadeInUp"><b>Outros</b></p>
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carousel2ExampleCaptions" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carousel2ExampleCaptions" role="button" data-slide="next">
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
-
-            </div>
-
-            <!-- Projetos no GitHub -->
-            <div class="tab-pane fade" id="list-projetos" role="tabpanel" aria-labelledby="list-projetos-list">
-
-              <div class="geral-info p-3 ">
-
-
+              <!-- Habilidades e Conhecimentos -->
+              <div class="tab-pane fade" id="list-habilidades" role="tabpanel" aria-labelledby="list-habilidades-list">
+                <div class="bd-example">
+                  <div id="carousel2ExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel2ExampleCaptions" data-slide-to="0" class="active">
+                      </li>
+                      <li data-target="#carousel2ExampleCaptions" data-slide-to="1"></li>
+                      <li data-target="#carousel2ExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active geral-info p-5">
+                        <p class="mt-2 animated-delay fadeInUp"><b> Bioinformática</b></p>
+                        <div class="row justify-content-center d-flex align-items-center p-3">
+                          <div class="col col-md-3">
+                            <img src="images/R_1.png" class="d-inline animated-delay fadeInUp" width="80%" alt="R">
+                          </div>
+                          <div class="col col-md-4">
+                            <img src="images/chimera.png" class="d-inline animated-delay fadeInUp" width="100%" alt="Chimera">
+                          </div>
+                          <div class="col col-md-4">
+                            <img src="images/psipred.jpg" class="d-inline animated-delay fadeInUp" width="100%" alt="Chimera">
+                          </div>
+                        </div>
+                        <div class="row justify-content-center d-flex align-items-center p-3">
+                          <!-- <div class="col col-md-3">
+                            <img src="images/dplyr.png" class="d-inline animated-delay fadeInUp" width="60%" alt="R">
+                            </div> -->
+                          <div class="col col-md-3">
+                            <img src="images/tidyr.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Chimera">
+                          </div>
+                          <div class="col col-md-3">
+                            <img src="images/lubridate.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Rstudio">
+                          </div>
+                          <div class="col col-md-3">
+                            <img src="images/ggplot2.png" class="d-inline animated-delay fadeInUp" width="80%" alt="Rstudio">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item  geral-info p-5">
+                        <p class="mt-2 animated-delay fadeInUp"><b>Back-end</b></p>
+                      </div>
+                      <div class="carousel-item geral-info p-5">
+                        <p class="mt-2 animated-delay fadeInUp"><b>Front-end</b></p>
+                      </div>
+                      <div class="carousel-item geral-info p-5">
+                        <p class="mt-2 animated-delay fadeInUp"><b>Outros</b></p>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel2ExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2ExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12">
-              <div class="list-group list-group-horizontal-lg" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" id="list-intro-list" data-toggle="list"
-                  href="#list-intro" role="tab" aria-controls="intro">Sobre Mim</a>
-                <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-toggle="list"
-                  href="#list-experiencia" role="tab" aria-controls="experiencia">Experiências Profissionais</a>
-                <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-toggle="list"
-                  href="#list-habilidades" role="tab" aria-controls="habilidades">Habilidades e Conhecimentos</a>
-                <a class="list-group-item list-group-item-action" id="list-projetos-list" data-toggle="list"
-                  href="#list-projetos" role="tab" aria-controls="projetos">Projetos no GitHub</a>
+              <!-- Projetos no GitHub -->
+              <div class="tab-pane fade" id="list-projetos" role="tabpanel" aria-labelledby="list-projetos-list">
+                <div class="geral-info p-3 ">
+                </div>
               </div>
             </div>
-
+            <div class="row">
+              <div class="col-12">
+                <div class="list-group list-group-horizontal-lg" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-intro-list" data-toggle="list"
+                    href="#list-intro" role="tab" aria-controls="intro">About Me</a>
+                  <a class="list-group-item list-group-item-action" id="list-experiencia-list" data-toggle="list"
+                    href="#list-experiencia" role="tab" aria-controls="experiencia">Experience</a>
+                  <a class="list-group-item list-group-item-action" id="list-habilidades-list" data-toggle="list"
+                    href="#list-habilidades" role="tab" aria-controls="habilidades">Education</a>
+                  <a class="list-group-item list-group-item-action" id="list-projetos-list" data-toggle="list"
+                    href="#list-projetos" role="tab" aria-controls="projetos">Skills</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
-  crossorigin="anonymous "></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
-  crossorigin="anonymous "></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
-  crossorigin="anonymous "></script>
-<script type="text/javascript " src="js/main.js "></script>
-
-
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n "
+    crossorigin="anonymous "></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
+    crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 "
+    crossorigin="anonymous "></script>
+  <script type="text/javascript " src="js/main.js "></script>
 </html>
