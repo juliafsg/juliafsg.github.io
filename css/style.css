@@ -10,9 +10,21 @@ html {
   src: url('../fonts/WorkSans-VariableFont_wght.ttf');
 }
 
-p, ul{
+p {
+  font-size: 16px;
   font-family: 'Work Sans';
   color: rgb(0, 0, 0);
+}
+span {
+  font-family: 'Work Sans';
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+h3 {
+  font-size: 18px;
+  font-family: 'Work Sans';
+  color: rgb(0, 0, 0);
+  margin: 0;
 }
 
 a {
@@ -79,7 +91,13 @@ ul {
 }
 
 @media screen and (max-width: 600px) {
-  p, ul>li {
+  h3 {
+    font-size: 16px;
+  }
+  span {
+    font-size: 12px;
+  }
+  p {
     font-size: 14px;
     margin: 0px;
     padding: 10px;
@@ -98,7 +116,13 @@ ul {
 }
 
 @media screen and (max-width: 320px) {
-  p, ul>li {
+  h3 {
+    font-size: 13px;
+  }
+  span {
+    font-size: 9px;
+  }
+  p {
     font-size: 11px;
     margin: 0px;
     padding: 10px;
