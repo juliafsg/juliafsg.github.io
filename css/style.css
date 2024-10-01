@@ -108,7 +108,7 @@ ul {
     padding: 5px !important;
   }
   img {
-    width: 80%;
+    max-width: 80%;
   }
   .list-group-item {
     padding: 5px;
